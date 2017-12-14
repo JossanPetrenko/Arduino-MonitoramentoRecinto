@@ -10,8 +10,23 @@ class ComandosApi {
 
     send(comando) {
 
-        return this.http.post("/comandos");
+        return this.http.get("/create-command?command=" + comando);
 
+    }
+
+
+    turnLedOn(){
+        return this.send("turn-led-on");
+    }
+
+    
+    turnLedOff(){
+        return this.send("turn-led-off");
+    }
+
+    
+    turnLedAuto(){
+        return this.send("turn-led-auto");
     }
 
 }

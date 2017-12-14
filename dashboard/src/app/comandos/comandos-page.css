@@ -4,7 +4,23 @@
         padding: 8px;
         text-align: center;
     }
+    .comandos-page .mensagem-sucesso {
+        
+                margin: 16px;
+                padding: 8px;
+                text-align: center;
+                background-color: #43A047 !important;
+                color: white !important;
+                opacity: 1;
+                line-height: 20px;
+            }
 
+
+            .comandos-page  .mensagem-sucesso.hide {
+                visibility: hidden;
+                opacity: 0;
+            }
+        
 
     .comandos-page .painel-comandos .btn-comando {
         margin: 8px;

@@ -65,7 +65,7 @@ server.route({
             if (err) {
                 return reply.code(400);
             }
-            return reply("ok!");
+            return reply({ success: true });
 
         })
 
